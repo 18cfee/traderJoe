@@ -17,7 +17,7 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
         settings['testField'] = 1
     else:
         settings['testField'] += 1
-        print("it is in now value: ", settings['testField'])
+        print("it is in now value hea: ", settings['testField'])
 
     print("period is: ")
     print(CLOSE[-periodLonger:])
