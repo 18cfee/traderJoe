@@ -11,18 +11,28 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
     periodShorter=40
 
     # Calculate Simple Moving Average (SMA)
+
+    if('testField' not in settings.keys()):
+        print("not in yet")
+        settings['testField'] = 1
+    else:
+        settings['testField'] += 1
+        print("it is in now value: ", settings['testField'])
+
+    print("period is: ")
+    print(CLOSE[-periodLonger:])
+
     smaLongerPeriod=numpy.nansum(CLOSE[-periodLonger:,:],axis=0)/periodLonger
     smaShorterPeriod=numpy.nansum(CLOSE[-periodShorter:,:],axis=0)/periodShorter
 
     longEquity= smaShorterPeriod > smaLongerPeriod
-    print(longEquity)
+    # print(longEquity)
     shortEquity= ~longEquity
-    print(shortEquity)
+    # print(shortEquity)
     pos=numpy.zeros(nMarkets)
     pos[longEquity]=1
     pos[shortEquity]=-1
 
-    weights = pos/numpy.nansum(abs(pos))
     return pos, settings
 
 
