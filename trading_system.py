@@ -6,9 +6,11 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
     ''' This system uses trend following techniques to allocate capital into the desired equities'''
 
     nMarkets=CLOSE.shape[1]
+    print("the number of markets " , nMarkets)
 
-    periodLonger=500
-    periodShorter=40
+
+    periodLonger=100
+    periodShorter=10
 
     # Calculate Simple Moving Average (SMA)
 
@@ -19,19 +21,27 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
         settings['testField'] += 1
         print("it is in now value hea: ", settings['testField'])
 
-    print("period is: ")
-    print(CLOSE[-periodLonger:])
 
     smaLongerPeriod=numpy.nansum(CLOSE[-periodLonger:,:],axis=0)/periodLonger
     smaShorterPeriod=numpy.nansum(CLOSE[-periodShorter:,:],axis=0)/periodShorter
-
+    print("smaShorter " , smaShorterPeriod)
     longEquity= smaShorterPeriod > smaLongerPeriod
-    # print(longEquity)
+    print("long is: ",longEquity)
     shortEquity= ~longEquity
-    # print(shortEquity)
+    print("short is: " , shortEquity)
     pos=numpy.zeros(nMarkets)
-    pos[longEquity]=1
-    pos[shortEquity]=-1
+
+    pos[longEquity]=settings['testField']%2*0
+    pos[shortEquity]=settings['testField']%2*0
+
+    if(settings['testField']%400>199):
+        pos[0] = 1
+        pos[1] = 0
+    else:
+        pos[0] = 0
+        pos[1] = 1
+
+    print(pos)
 
     return pos, settings
 
@@ -54,15 +64,17 @@ def mySettings():
 
     # Futures Contracts
 
-    settings['markets']  = ['CASH','F_AD', 'F_BO', 'F_BP', 'F_C', 'F_CC', 'F_CD',
-    'F_CL', 'F_CT', 'F_DX', 'F_EC', 'F_ED', 'F_ES', 'F_FC','F_FV', 'F_GC',
-    'F_HG', 'F_HO', 'F_JY', 'F_KC', 'F_LB', 'F_LC', 'F_LN', 'F_MD', 'F_MP',
-    'F_NG', 'F_NQ', 'F_NR', 'F_O', 'F_OJ', 'F_PA', 'F_PL', 'F_RB', 'F_RU',
-    'F_S','F_SB', 'F_SF', 'F_SI', 'F_SM', 'F_TU', 'F_TY', 'F_US','F_W', 'F_XX',
-    'F_YM']
+    # settings['markets']  = ['CASH','F_AD', 'F_BO', 'F_BP', 'F_C', 'F_CC', 'F_CD',
+    # 'F_CL', 'F_CT', 'F_DX', 'F_EC', 'F_ED', 'F_ES', 'F_FC','F_FV', 'F_GC',
+    # 'F_HG', 'F_HO', 'F_JY', 'F_KC', 'F_LB', 'F_LC', 'F_LN', 'F_MD', 'F_MP',
+    # 'F_NG', 'F_NQ', 'F_NR', 'F_O', 'F_OJ', 'F_PA', 'F_PL', 'F_RB', 'F_RU',
+    # 'F_S','F_SB', 'F_SF', 'F_SI', 'F_SM', 'F_TU', 'F_TY', 'F_US','F_W', 'F_XX',
+    # 'F_YM']
 
-    settings['beginInSample'] = '20120506'
-    settings['endInSample'] = '20150506'
+    settings['markets'] = ['AAPL','CASH']
+
+    settings['beginInSample'] = '20110506'
+    settings['endInSample'] = '20180806'
 
     settings['lookback']= 504
     settings['budget']= 10**6

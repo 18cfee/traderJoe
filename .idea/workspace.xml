@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f50694c9-20a1-4ee2-9222-34dbd3be3da7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testingPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingPython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_system.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,21 +24,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="py" value="3" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="559" />
+          <entry key="py" value="1128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="559" />
+          <entry key="Python" value="1128" />
         </counts>
       </usages-collector>
     </session>
@@ -47,19 +50,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trading_system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="365">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tickerData/F_BP.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testingPython.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="255">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
-                <marker date="1539805124951" expanded="true" signature="60:65" ph="..." />
+                <marker date="1539904956996" expanded="true" signature="31:36" ph="..." />
+                <marker date="1539904956996" expanded="true" signature="76:81" ph="..." />
+                <marker date="1539904956996" expanded="true" signature="76:243" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/405872821/numpy/core/multiarray.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39933">
+            <state relative-caret-position="580">
               <caret line="2349" column="4" selection-start-line="2349" selection-start-column="4" selection-end-line="2349" selection-end-column="4" />
             </state>
           </provider>
@@ -95,10 +107,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1070" />
+    <option name="x" value="1072" />
     <option name="y" value="372" />
-    <option name="width" value="1299" />
-    <option name="height" value="1400" />
+    <option name="width" value="1297" />
+    <option name="height" value="1398" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -140,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.trading_system">
+  <component name="RunManager" selected="Python.testingPython">
     <configuration name="testingPython" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trading" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,14 +219,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1072" y="372" width="1039" height="1120" extended-state="0" />
+    <frame x="1074" y="372" width="1037" height="1118" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22654691" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32928064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -232,27 +245,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trading_system.py">
+    <entry file="file://$PROJECT_DIR$/tickerData/F_BP.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-17" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/405872821/numpy/core/multiarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="2349" column="4" selection-start-line="2349" selection-start-column="4" selection-end-line="2349" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testingPython.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <marker date="1539805124951" expanded="true" signature="60:65" ph="..." />
+            <marker date="1539904956996" expanded="true" signature="31:36" ph="..." />
+            <marker date="1539904956996" expanded="true" signature="76:81" ph="..." />
+            <marker date="1539904956996" expanded="true" signature="76:243" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/405872821/numpy/core/multiarray.py">
+    <entry file="file://$PROJECT_DIR$/trading_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39933">
-          <caret line="2349" column="4" selection-start-line="2349" selection-start-column="4" selection-end-line="2349" selection-end-column="4" />
+        <state relative-caret-position="365">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
