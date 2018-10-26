@@ -1,61 +1,29 @@
 ### Quantiacs Trend Following Trading System Example
 # import necessary Packages below:
 import numpy
+from PrintDeb import PrintDeb
+from MarketOverView import MarketOverView
 
 def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, settings):
     ''' This system uses trend following techniques to allocate capital into the desired equities'''
+    printer = PrintDeb()
+    printer.allPrinting(settings,CLOSE,False)
 
-    nMarkets=CLOSE.shape[1]
-    print("the number of markets " , nMarkets)
-
-
-    periodLonger=100
-    periodShorter=10
-
-    # Calculate Simple Moving Average (SMA)
-
-    if('testField' not in settings.keys()):
-        print("not in yet")
-        settings['testField'] = 1
+    if ('state' not in settings.keys()):
+        print("init state")
+        state = MarketOverView(CLOSE,settings['lookback'])
+        settings['state'] = state
     else:
-        settings['testField'] += 1
-        print("it is in now value hea: ", settings['testField'])
+        state = settings['state']
+        state.addDailyData(CLOSE)
 
+    state.incrementDay()
 
-    smaLongerPeriod=numpy.nansum(CLOSE[-periodLonger:,:],axis=0)/periodLonger
-    smaShorterPeriod=numpy.nansum(CLOSE[-periodShorter:,:],axis=0)/periodShorter
-    print("smaLonger ", smaLongerPeriod)
-    print("smaShorter " , smaShorterPeriod)
-    longEquity= smaShorterPeriod > smaLongerPeriod
-    print("long is: ",longEquity)
-    shortEquity= ~longEquity
-    print("short is: " , shortEquity)
-    pos=numpy.zeros(nMarkets)
-
-    pos[longEquity]=settings['testField']%2*0
-    pos[shortEquity]=settings['testField']%2*0
-
-    #if(settings['testField']%2<1):
-
-    if('crash' not in settings.keys()):
-        settings['crash'] = 0
-
-    varOne = smaShorterPeriod[0]
-    varTwo = smaLongerPeriod[0]*.93
-
-    print("the vars are " , varOne, varTwo)
-    #if(False):
-    if(varOne < varTwo or settings['crash'] == 1):
-        settings['crash'] = 1
-        pos[0] = 0
-        pos[1] = 1
+    if(state.isInCrashState()):
+        return state.goCash() , settings
     else:
-        pos[0] = 1
-        pos[1] = 0
+        return state.allIn() , settings
 
-    print(pos)
-
-    return pos, settings
 
 
 def mySettings():

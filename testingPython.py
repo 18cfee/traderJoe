@@ -1,4 +1,5 @@
 import numpy
+from MarketOverView import MarketOverView
 
 
 
@@ -17,6 +18,10 @@ def numpyZeroes():
     print(pos)
 
     print(1 == 1)
+
+    state = MarketOverView()
+
+    print("test class", state.isInCrashState())
 
 
 if __name__ == '__main__':
