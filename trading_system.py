@@ -24,6 +24,7 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
 
     smaLongerPeriod=numpy.nansum(CLOSE[-periodLonger:,:],axis=0)/periodLonger
     smaShorterPeriod=numpy.nansum(CLOSE[-periodShorter:,:],axis=0)/periodShorter
+    print("smaLonger ", smaLongerPeriod)
     print("smaShorter " , smaShorterPeriod)
     longEquity= smaShorterPeriod > smaLongerPeriod
     print("long is: ",longEquity)
@@ -34,12 +35,23 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
     pos[longEquity]=settings['testField']%2*0
     pos[shortEquity]=settings['testField']%2*0
 
-    if(settings['testField']%400>199):
-        pos[0] = 1
-        pos[1] = 0
-    else:
+    #if(settings['testField']%2<1):
+
+    if('crash' not in settings.keys()):
+        settings['crash'] = 0
+
+    varOne = smaShorterPeriod[0]
+    varTwo = smaLongerPeriod[0]*.93
+
+    print("the vars are " , varOne, varTwo)
+    #if(False):
+    if(varOne < varTwo or settings['crash'] == 1):
+        settings['crash'] = 1
         pos[0] = 0
         pos[1] = 1
+    else:
+        pos[0] = 1
+        pos[1] = 0
 
     print(pos)
 

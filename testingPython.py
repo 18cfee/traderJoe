@@ -16,6 +16,8 @@ def numpyZeroes():
     pos = [1]
     print(pos)
 
+    print(1 == 1)
+
 
 if __name__ == '__main__':
     myMethod()
