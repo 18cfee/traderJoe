@@ -1,0 +1,8 @@
+Rules
+https://quantiacs.com/Competitions/Q12rules.aspx
+
+Tips (may have proof on sharpe ratio being good)
+https://www.youtube.com/watch?v=5w_i6mmAHQk
+
+10 algos
+https://medium.com/cracking-the-data-science-interview/a-tour-of-the-top-10-algorithms-for-machine-learning-newbies-7228aa8ef541
