@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f50694c9-20a1-4ee2-9222-34dbd3be3da7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Goals.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketOverView.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketOverView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingPython.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickerData/AAPL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_system.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,14 +40,14 @@
         <counts>
           <entry key="PrintDeb" value="96" />
           <entry key="dummy" value="42" />
-          <entry key="gitignore" value="44" />
+          <entry key="gitignore" value="102" />
           <entry key="py" value="3211" />
           <entry key="txt" value="1599" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1685" />
+          <entry key="PLAIN_TEXT" value="1743" />
           <entry key="Python" value="3307" />
         </counts>
       </usages-collector>
@@ -140,8 +134,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="526">
-                  <caret line="84" column="4" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+                <state>
+                  <caret column="29" selection-start-column="29" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -395,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="84" column="4" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,6 @@
+# Carl inserted this stuff...
+/tickerData
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -103,5 +106,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# the folder for tickerData
-/tickerData
+
