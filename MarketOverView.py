@@ -4,7 +4,7 @@ class MarketOverView:
         self.CLOSE = CLOSE
         self.day = 0
         self.crashState = False
-        self.prevMax = 0.0
+        self.max = 0.0
         self.curDayVal = 0.0
         self.lookback = lookback
 
@@ -13,10 +13,9 @@ class MarketOverView:
 
     def incrementDay(self):
         self.day += 1
-        self.prevMax = max(self.curDayVal,self.prevMax)
         self.curDayVal = self.CLOSE.item((self.lookback - 1, 0))
-        print(self.prevMax)
-
+        self.max = max(self.curDayVal, self.max)
+        print(str(self.day) + '\t' + str(self.max - self.curDayVal))
 
     def isInCrashState(self):
         periodLonger = 100
@@ -32,7 +31,7 @@ class MarketOverView:
         return False
         #return new < old or self.crashState
     def allIn(self):
-        pos = numpy.zeros(2)
+        pos = numpy.zeros(101)
         pos[0] = 1
         pos[1] = 0
         return pos

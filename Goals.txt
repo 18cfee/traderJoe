@@ -1,0 +1,33 @@
+11/9/2018 is start of this period
+todo Means current priority
++ Means done
+
+
+Machine learning or other to predict most drastic companies as far as short or long:
+    - find what vars are included that could be used to build a classifier
+        the rules seems to not say anything more than the close each day
+    todo learn a couple of algorithms that could be used
+    - use best fit curves to predict
+
+Build a structure for deciding what companies to invest in
+    - var for number of companies to invest in at once
+    - var for min time to "commit" to an investment
+    - var for min benefit prediction to make it worth switching (after commit time is over)
+    - maybe force a change in position after a certain amount of time so that I could not be dQd. rule 7.s
+
+Would be interesting to make a list of the most volatile companies?
+    - design and implement a volatility metric for stocks
+
+Read the rules and really understand the competition a little better
+    - read through the rules again before comp
+    todo what is the sharpe ratio exactly?
+    todo make a submission
+    - does the software version really matter as long as it runs?
+    - Make sure to really understand slippage
+    - what happens if a position is not specified (is previous day kept)?
+    - what is meant by annualized volatility?
+    - what is the difference between a stock and future
+
+General Tech Stuff To Take Care of
+    todo finish .gitignore
+    - make a script to easily visualize some data

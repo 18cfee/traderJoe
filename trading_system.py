@@ -19,10 +19,17 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
 
     state.incrementDay()
 
-    if(state.isInCrashState()):
-        return state.goCash() , settings
-    else:
-        return state.allIn() , settings
+    pos = numpy.zeros(101)
+    for i in range(101):
+        pos[i] = 1
+
+    return pos, settings
+
+    #
+    # if(state.isInCrashState()):
+    #     return state.goCash() , settings
+    # else:
+    #     return state.allIn() , settings
 
 
 
@@ -32,15 +39,15 @@ def mySettings():
     settings= {}
 
     # S&P 100 stocks
-    # settings['markets']=['CASH','AAPL','ABBV','ABT','ACN','AEP','AIG','ALL',
-    # 'AMGN','AMZN','APA','APC','AXP','BA','BAC','BAX','BK','BMY','BRKB','C',
-    # 'CAT','CL','CMCSA','COF','COP','COST','CSCO','CVS','CVX','DD','DIS','DOW',
-    # 'DVN','EBAY','EMC','EMR','EXC','F','FB','FCX','FDX','FOXA','GD','GE',
-    # 'GILD','GM','GOOGL','GS','HAL','HD','HON','HPQ','IBM','INTC','JNJ','JPM',
-    # 'KO','LLY','LMT','LOW','MA','MCD','MDLZ','MDT','MET','MMM','MO','MON',
-    # 'MRK','MS','MSFT','NKE','NOV','NSC','ORCL','OXY','PEP','PFE','PG','PM',
-    # 'QCOM','RTN','SBUX','SLB','SO','SPG','T','TGT','TWX','TXN','UNH','UNP',
-    # 'UPS','USB','UTX','V','VZ','WAG','WFC','WMT','XOM']
+    settings['markets']=['CASH','AAPL','ABBV','ABT','ACN','AEP','AIG','ALL',
+    'AMGN','AMZN','APA','APC','AXP','BA','BAC','BAX','BK','BMY','BRKB','C',
+    'CAT','CL','CMCSA','COF','COP','COST','CSCO','CVS','CVX','DD','DIS','DOW',
+    'DVN','EBAY','EMC','EMR','EXC','F','FB','FCX','FDX','FOXA','GD','GE',
+    'GILD','GM','GOOGL','GS','HAL','HD','HON','HPQ','IBM','INTC','JNJ','JPM',
+    'KO','LLY','LMT','LOW','MA','MCD','MDLZ','MDT','MET','MMM','MO','MON',
+    'MRK','MS','MSFT','NKE','NOV','NSC','ORCL','OXY','PEP','PFE','PG','PM',
+    'QCOM','RTN','SBUX','SLB','SO','SPG','T','TGT','TWX','TXN','UNH','UNP',
+    'UPS','USB','UTX','V','VZ','WAG','WFC','WMT','XOM']
 
     # Futures Contracts
 
@@ -51,10 +58,10 @@ def mySettings():
     # 'F_S','F_SB', 'F_SF', 'F_SI', 'F_SM', 'F_TU', 'F_TY', 'F_US','F_W', 'F_XX',
     # 'F_YM']
 
-    settings['markets'] = ['AAPL','CASH']
+    # settings['markets'] = ['AAPL','CASH']
 
-    settings['beginInSample'] = '20110506'
-    settings['endInSample'] = '20180806'
+    settings['beginInSample'] = '20000506'
+    settings['endInSample'] = '20181206'
 
     settings['lookback']= 504
     settings['budget']= 10**6
