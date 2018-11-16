@@ -6,3 +6,6 @@ https://www.youtube.com/watch?v=5w_i6mmAHQk
 
 10 algos
 https://medium.com/cracking-the-data-science-interview/a-tour-of-the-top-10-algorithms-for-machine-learning-newbies-7228aa8ef541
+https://jakevdp.github.io/PythonDataScienceHandbook/05.08-random-forests.html
+//decision tree
+https://scikit-learn.org/stable/modules/tree.html
