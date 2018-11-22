@@ -3,9 +3,13 @@ https://quantiacs.com/Competitions/Q12rules.aspx
 
 Tips (may have proof on sharpe ratio being good)
 https://www.youtube.com/watch?v=5w_i6mmAHQk
+https://quantiacs.com/For-Quants/GetStarted.aspx
 
 10 algos
 https://medium.com/cracking-the-data-science-interview/a-tour-of-the-top-10-algorithms-for-machine-learning-newbies-7228aa8ef541
 https://jakevdp.github.io/PythonDataScienceHandbook/05.08-random-forests.html
 //decision tree
 https://scikit-learn.org/stable/modules/tree.html
+
+Commands
+pip install --upgrade quantiacsToolbox

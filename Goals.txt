@@ -5,7 +5,7 @@ todo Means current priority
 
 Machine learning or other to predict most drastic companies as far as short or long:
     - find what vars are included that could be used to build a classifier
-        the rules seems to not say anything more than the close each day
+        - todo find correlation with vars
     todo learn a couple of algorithms that could be used
         neural net?
         Decision tree?
