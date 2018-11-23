@@ -1,0 +1,49 @@
+11/9/2018 is start of this period
+todo Means current priority
++ Means done
+
+
+Machine learning or other to predict most drastic companies as far as short or long:
+    - find what vars are included that could be used to build a classifier
+        - todo find correlation with vars
+            - make a table of all the factors and then normalize and plot over a certain time period. Also plot all the stocks, maybe take the
+            log of the actual stock value before normalizing, it is possible that stock will have to be plotted as more of how much it changed
+            each day
+    todo learn a couple of algorithms that could be used
+        neural net?
+        Decision tree?
+        k-nearest to decide which companies are similar to each other
+            then predict how a company will do based on ones it is similar to and how they did in the past
+            or just see if one is straying a little from the ones it is similar to and predict that it will eventually
+            follow their behavior
+        maybe some kind of classification about which companies seem to be good and which bad?
+
+    - use best fit curves to predict
+
+Build a structure for deciding what companies to invest in
+    - var for number of companies to invest in at once
+    - can more be invested in certain types of companies
+    - var for min time to "commit" to an investment
+    - var for min benefit prediction to make it worth switching (after commit time is over)
+    - maybe force a change in position after a certain amount of time so that I could not be dQd. rule 7.s
+    - reAllocating variable
+
+Would be interesting to make a list of the most volatile companies?
+    - design and implement a volatility metric for stocks
+
+Read the rules and really understand the competition a little better
+    - read through the rules again before comp
+    todo what is the sharpe ratio exactly?
+    todo make a submission
+    - does the software version really matter as long as it runs?
+    - Make sure to really understand slippage
+    - what happens if a position is not specified (is previous day kept)?
+    - what is meant by annualized volatility?
+    - what is the difference between a stock and future
+    - how much data can be stored in the
+
+General Tech Stuff To Take Care of
+    todo finish .gitignore
+    - make a script to easily visualize some data
+        histogram
+        x-y plot

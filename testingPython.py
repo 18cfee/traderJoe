@@ -1,4 +1,5 @@
 import numpy
+from MarketOverView import MarketOverView
 
 
 
@@ -18,7 +19,18 @@ def numpyZeroes():
 
     print(1 == 1)
 
+    state = MarketOverView()
+
+    print("test class", state.isInCrashState())
+
+
+def printTab():
+    print('tabs')
+    string = 'one' + '\t' + 'hi'
+    one = 1
+    print(string +'\t' + str(one))
 
 if __name__ == '__main__':
-    myMethod()
-    numpyZeroes()
+    #myMethod()
+    #numpyZeroes()
+    printTab()
