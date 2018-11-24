@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f50694c9-20a1-4ee2-9222-34dbd3be3da7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Goals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Goals.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +27,7 @@
           <entry key="1-10Pattern2,4,6,8,10Ans" value="1" />
           <entry key="PrintDeb" value="2" />
           <entry key="PrintDebbugging" value="1" />
-          <entry key="csv" value="1" />
+          <entry key="csv" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="py" value="7" />
           <entry key="txt" value="7" />
@@ -37,7 +35,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="1" />
+          <entry key="CSV" value="2" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="10" />
         </counts>
@@ -47,16 +45,16 @@
           <entry key="0-9Pattern0,2,4,6,8Ans" value="57" />
           <entry key="1-10Pattern2,4,6,8,10Ans" value="45" />
           <entry key="PrintDeb" value="96" />
-          <entry key="dummy" value="42" />
+          <entry key="dummy" value="53" />
           <entry key="gitignore" value="102" />
-          <entry key="py" value="4279" />
+          <entry key="py" value="4708" />
           <entry key="txt" value="2374" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2620" />
-          <entry key="Python" value="4375" />
+          <entry key="PLAIN_TEXT" value="2631" />
+          <entry key="Python" value="4804" />
         </counts>
       </usages-collector>
     </session>
@@ -116,11 +114,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+                <state relative-caret-position="442">
+                  <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CorrelationCalculator/data.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
                 </state>
               </provider>
             </entry>
@@ -473,12 +483,12 @@
     <frame x="1073" y="365" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.115555555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.115555555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32729104" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32729104" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -500,7 +510,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py</url>
-          <line>4</line>
+          <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -693,8 +703,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrelationCalculator/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
         </state>
       </provider>
     </entry>
