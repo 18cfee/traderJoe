@@ -48,7 +48,7 @@ for item in listK:
 
 print("the csv is being made")
 
-with open('data3.csv', 'w', newline='') as csvfile:
+with open('data.csv', 'w', newline='') as csvfile:
     a = range(55)
     writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
