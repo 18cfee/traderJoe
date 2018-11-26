@@ -6,9 +6,11 @@ todo Means current priority
 Machine learning or other to predict most drastic companies as far as short or long:
     - find what vars are included that could be used to build a classifier
         - todo find correlation with vars
-            - make a table of all the factors and then normalize and plot over a certain time period. Also plot all the stocks, maybe take the
-            log of the actual stock value before normalizing, it is possible that stock will have to be plotted as more of how much it changed
-            each day
+            - make the x and y data points be the difference between values of over a month, on stocks and some inputs
+            make it the percentage difference rather than price difference
+            - if this is not telling enough then only grab the negative days of the market or under a certain increase
+            to see how it handles more rare data or at least check that both input and stock are not just usually rising
+            and therefore usually correlated
     todo learn a couple of algorithms that could be used
         neural net?
         Decision tree?
@@ -47,3 +49,6 @@ General Tech Stuff To Take Care of
     - make a script to easily visualize some data
         histogram
         x-y plot
+
+Lessons:
+    learned that stock overall correlations just match things that have been rising or falling for a longer period of time

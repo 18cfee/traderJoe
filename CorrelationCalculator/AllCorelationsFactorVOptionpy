@@ -4,12 +4,7 @@ def readInput(fileType):
     folder_path = "..\\tickerData"
     array = []
     for filename in glob.glob(os.path.join(folder_path, fileType)):
-        if(fileType == '*txt'):
-            print("good")
-        if(filename.__contains__("USA")):
-            print(filename)
-        if(fileType == '*.txt' and filename.__contains__("USA")):
-            print("cont happen")
+        if fileType == '*txt' and filename.__contains__("USA"):
             continue
         with open(filename, 'r') as f:
             text = f.read()
@@ -40,6 +35,7 @@ if __name__ == '__main__':
     options = readInput('*txt')
 
     import numpy as np
+    import matplotlib.pyplot as plt
     x = [1.4,2.3]
     y = [2,3]
     print(np.corrcoef(x, y))
@@ -55,6 +51,8 @@ if __name__ == '__main__':
             x,y = honeDates(inputDict,option)
             cor = np.corrcoef(x,y)[1][0]
             if abs(cor) > .9:
+                plt.scatter(x, y, alpha=0.5)
+                plt.show()
                 print(optionName,inputName,cor)
 
 
