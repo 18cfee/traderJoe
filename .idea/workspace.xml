@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f50694c9-20a1-4ee2-9222-34dbd3be3da7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CorrelationCalculator/PullFactorFilesIntoCsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CorrelationCalculator/PullAllFilesIntoDataStructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/CorrelationCalculator/AllCorelationsFactorVOptionpy" afterDir="false" />
-    </list>
+    <list default="true" id="f50694c9-20a1-4ee2-9222-34dbd3be3da7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,8 +160,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrelationCalculator/AllCorelationsFactorVOptionpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
               <folding>
                 <marker date="1543187248926" expanded="true" signature="971:1147" ph="..." />
               </folding>
@@ -245,9 +241,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-22" />
-    <option name="width" value="1942" />
-    <option name="height" value="2092" />
+    <option name="x" value="3831" />
+    <option name="y" value="-1411" />
+    <option name="width" value="1938" />
+    <option name="height" value="2109" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -455,10 +452,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="971" height="1046" extended-state="0" />
+    <frame x="3834" y="-1411" width="1292" height="1406" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1486631" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11075697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -722,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrelationCalculator/AllCorelationsFactorVOptionpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding>
             <marker date="1543187248926" expanded="true" signature="971:1147" ph="..." />
           </folding>
