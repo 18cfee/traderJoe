@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f50694c9-20a1-4ee2-9222-34dbd3be3da7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Goals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Goals.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,13 +64,14 @@
         <counts>
           <entry key="AllCorelationsFactorVOptionpy" value="1" />
           <entry key="csv" value="10" />
+          <entry key="gitignore" value="1" />
           <entry key="py" value="9" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="PLAIN_TEXT" value="31" />
           <entry key="Python" value="10" />
           <entry key="UNKNOWN" value="1" />
         </counts>
@@ -78,13 +80,14 @@
         <counts>
           <entry key="AllCorelationsFactorVOptionpy" value="1174" />
           <entry key="dummy" value="30" />
+          <entry key="gitignore" value="41" />
           <entry key="py" value="389" />
           <entry key="txt" value="1016" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1046" />
+          <entry key="PLAIN_TEXT" value="1087" />
           <entry key="Python" value="1563" />
         </counts>
       </usages-collector>
@@ -99,11 +102,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Goals.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="884">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -150,15 +162,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="7" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorrelationCalculator/data.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -219,7 +222,6 @@
         <option value="$PROJECT_DIR$/PrintDeb" />
         <option value="$PROJECT_DIR$/testingPython.py" />
         <option value="$PROJECT_DIR$/MarketOverView.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/numberPattern/1-10Pattern2,4,6,8,10Ans" />
         <option value="$PROJECT_DIR$/numberPattern/0-9Pattern0,2,4,6,8Ans" />
         <option value="$PROJECT_DIR$/numberPattern/testDecisionTree.py" />
@@ -232,6 +234,7 @@
         <option value="$PROJECT_DIR$/numberPattern/CorrelationPlot.py" />
         <option value="$PROJECT_DIR$/CorrelationCalculator/AllCorelationsFactorVOptionpy" />
         <option value="$PROJECT_DIR$/Goals.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -522,13 +525,6 @@
     <entry file="file://$PROJECT_DIR$/tickerData/F_BP.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PrintDeb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -724,8 +720,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Goals.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="884">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
