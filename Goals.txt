@@ -39,10 +39,10 @@ Read the rules and really understand the competition a little better
     todo make a submission
     - does the software version really matter as long as it runs?
     - Make sure to really understand slippage
-    - what happens if a position is not specified (is previous day kept)?
+    - what happens if a position is not specified (is previous day kept)? (make sure slippage penalty is not incurred)
     - what is meant by annualized volatility?
     - what is the difference between a stock and future
-    - how much data can be stored in the
+    - how much data can be stored in the input
 
 General Tech Stuff To Take Care of
     todo finish .gitignore
