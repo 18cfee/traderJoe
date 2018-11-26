@@ -8,6 +8,7 @@ Machine learning or other to predict most drastic companies as far as short or l
         - todo find correlation with vars
             - make the x and y data points be the difference between values of over a month, on stocks and some inputs
             make it the percentage difference rather than price difference
+            - plot both with x-axis as the date
             - if this is not telling enough then only grab the negative days of the market or under a certain increase
             to see how it handles more rare data or at least check that both input and stock are not just usually rising
             and therefore usually correlated
