@@ -1,0 +1,60 @@
+import os,glob
+
+def readInput(fileType):
+    folder_path = "..\\tickerData"
+    array = []
+    for filename in glob.glob(os.path.join(folder_path, fileType)):
+        if(fileType == '*txt'):
+            print("good")
+        if(filename.__contains__("USA")):
+            print(filename)
+        if(fileType == '*.txt' and filename.__contains__("USA")):
+            print("cont happen")
+            continue
+        with open(filename, 'r') as f:
+            text = f.read()
+            filename = filename.replace(folder_path + "\\", "")
+            filename = filename.replace(".txt", "")
+            fileData = []
+            fileData.append(["Date",filename])
+            lines = text.splitlines()
+            for line in lines:
+                line = line.split(',')
+                if str(line[0].strip('\n')) != 'DATE':
+                    fileData.append(line)
+        array.append(fileData)
+    return array
+
+def honeDates(inputDict,option):
+    x = []
+    y = []
+    for datePair in option:
+        if datePair[0] in inputDict:
+            x.append(float(datePair[1]))
+            y.append(float(inputDict[datePair[0]]))
+    return x,y
+
+
+if __name__ == '__main__':
+    inputs = readInput('USA*.txt')
+    options = readInput('*txt')
+
+    import numpy as np
+    x = [1.4,2.3]
+    y = [2,3]
+    print(np.corrcoef(x, y))
+    for input in inputs:
+        inputName = input[0]
+        input = input[1:]
+        inputDict = {}
+        for pair in input:
+            inputDict[pair[0]] = pair[1]
+        for option in options:
+            optionName = option[0]
+            option = option[1:]
+            x,y = honeDates(inputDict,option)
+            cor = np.corrcoef(x,y)[1][0]
+            if abs(cor) > .9:
+                print(optionName,inputName,cor)
+
+
