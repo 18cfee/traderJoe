@@ -23,11 +23,18 @@ def readInput(fileType):
 def honeDates(inputDict,option):
     x = []
     y = []
+    z = []
     for datePair in option:
         if datePair[0] in inputDict:
             x.append(float(datePair[1]))
             y.append(float(inputDict[datePair[0]]))
-    return x,y
+            z.append(datePair[0])
+    x2 = []
+    y2 = []
+    for i in range(len(x) - 1):
+        x2.append((x[i + 1] - x[i])/(x[i + 1] + 0.000001))
+        y2.append((y[i + 1] - y[i])/(y[i + 1] + 0.000001))
+    return x,y,z,x2,y2
 
 
 if __name__ == '__main__':
@@ -48,10 +55,18 @@ if __name__ == '__main__':
         for option in options:
             optionName = option[0]
             option = option[1:]
-            x,y = honeDates(inputDict,option)
-            cor = np.corrcoef(x,y)[1][0]
-            if abs(cor) > .9:
-                plt.scatter(x, y, alpha=0.5)
+            x,y,z,x2,y2 = honeDates(inputDict,option)
+            cor = np.corrcoef(x2,y2)[1][0]
+            if abs(cor) > .5:
+                red = []
+                blue = []
+                for i in range(len(x)):
+                    red.append(5)
+                    blue.append(1)
+                # plt.scatter(z, x, c=red, alpha=0.5)
+                # plt.scatter(z, y, c=blue, alpha=0.5)
+                # plt.show()
+                plt.scatter(x,y,alpha=0.5)
                 plt.show()
                 print(optionName,inputName,cor)
 
