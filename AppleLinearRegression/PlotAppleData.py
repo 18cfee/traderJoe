@@ -65,14 +65,15 @@ with open(datafile, 'r') as f:
 
 datesList = []
 filteredRates = []
-print(dates)
+runningRate = 0
 for i in range(len(rateDates)):
     date = rateDates[i]
-    rate = rates[i]
+    runningRate += rates[i]
     if date in dates:
         datesList.append(date)
-        filteredRates.append(rate)
-        print date , rate
+        filteredRates.append(runningRate)
+        print date , runningRate
+        runningRate= 0
 
 plt.scatter(range(len(filteredRates)),filteredRates)
 plt.show()
