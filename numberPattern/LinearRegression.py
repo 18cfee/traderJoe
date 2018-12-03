@@ -23,3 +23,17 @@ model.fit(X,y)
 Xnew = [[2.2,4]]
 ynew = model.predict(Xnew)
 print(ynew[0])
+
+
+# generate regression dataset
+X, y = make_regression(n_samples=100, n_features=2, noise=0.1)
+# fit final model
+model = LinearRegression()
+model.fit(X, y)
+# new instances where we do not know the answer
+Xnew, _ = make_regression(n_samples=3, n_features=2, noise=0.1, random_state=1)
+# make a prediction
+ynew = model.predict(X)
+# show the inputs and predicted outputs
+for i in range(len(X)):
+	print("X=%s, Predicted=%s" % (X[i], ynew[i]))

@@ -34,6 +34,7 @@ with open(file, 'r') as f:
         size.append(.5)
     # plt.scatter(points,rates, s=size)
     # plt.show()
+appleDates = set(rateDates)
 
 
 datafile = "..\\CorrelationCalculator\\data.csv"
@@ -48,10 +49,13 @@ with open(datafile, 'r') as f:
             previousLine[i] = -724
     for line in lines[2:]:
         line = line.split(',')
+        date = int(line[0])
+        if date not in appleDates:
+            continue
         for i in range(len(line))[1:]:
             if line[i] == '':
                 line[i] = previousLine[i]
-        dates.add(int(line[0]))
+        dates.add(date)
         dataRates = []
         for i in range(len(line))[1:]:
             prevVal = float(previousLine[i])
@@ -59,7 +63,7 @@ with open(datafile, 'r') as f:
             rate = (curVal - prevVal)/(curVal + .000000001)
             if prevVal == 724:
                 rate = 0
-            data.append(rate)
+            dataRates.append(rate)
         data.append(dataRates)
         previousLine = line
 
@@ -75,7 +79,18 @@ for i in range(len(rateDates)):
         print date , runningRate
         runningRate= 0
 
-plt.scatter(range(len(filteredRates)),filteredRates)
+# plt.scatter(range(len(filteredRates)),filteredRates)
+# plt.show()
+
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+print data[1]
+print "data",len(data),"Rates size",len(filteredRates), "date size", len(dates)
+model.fit(data,filteredRates)
+
+predictedRates = model.predict(data)
+plt.scatter(range(len(filteredRates)),predictedRates)
 plt.show()
 
 
